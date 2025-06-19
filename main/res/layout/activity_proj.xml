@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ProjActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expression Editor"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter expression (e.g., (x+1)^2; x=2,y=3 for substitute)"
+        android:inputType="textNoSuggestions"
+        android:autofillHints=""
+        android:minHeight="48dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginTop="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <Button
+            android:id="@+id/expandButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="Expand" />
+
+        <Button
+            android:id="@+id/simplifyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="Simplify" />
+
+        <Button
+            android:id="@+id/factoriseButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="Factorise" />
+
+        <Button
+            android:id="@+id/substituteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:text="Substitute" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/outputView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Output will appear here"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:background="#E0E0E0"
+        android:minHeight="100dp"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

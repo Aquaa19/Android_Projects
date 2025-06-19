@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AlphaMath</string>
+    <string name="hint_guide_initial">Select a module from above and enter input below.</string>
+    <string name="hint_select_module">Please select a calculation mode first.</string>
+    <string name="hint_enter_input_below">Enter your input below.</string>
+    <string name="hint_enter_input_generic">Enter input here</string>
+    <string name="hint_congruence">Format: a b m (e.g. 7 2 5 for 7 ≡ 2 (mod 5))</string>
+    <string name="hint_crt">Format: a1 m1 a2 m2 ... an mn (e.g. 2 3 3 5 2 7 for x ≡ 2 (mod 3), x ≡ 3 (mod 5), x ≡ 2 (mod 7))</string>
+    <string name="hint_cubic">Format: Enter full Equation: ax³+bx²+cx+d=0 (e.g. x^3 - 6x^2 + 11x - 6)</string>
+    <string name="hint_multiplier">Format: num1, num2 (e.g., 3 7 for 3*(a number)%num2==0 )</string>
+    <string name="hint_poly_long_div">Format: numerator, denominator (e.g. x^3 - 6x^2 + 11x - 6, x - 1)</string>
+    <string name="hint_trig_calc">Format: sin(4pi/3) </string>
+    <string name="hint_quad">Format: ax²+bx+c=0 (e.g., 1x^2 - 5x + 6 = 0 or x^2-5x+6)</string>
+    <string name="hint_sturm_final">Optional: Equation,values (e.g. x^3+6x^2+12x+8,-2,-1,0,1,2 ).</string>
+    <string name="module_selected_toast">%1$s selected.</string>
+    <string name="module_selected_info">Selected Module: %1$s</string>
+    <string name="processing_message">Processing with %1$s...</string>
+</resources>

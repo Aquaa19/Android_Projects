@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/moduleInfoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please select a module"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/moduleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginBottom="16dp"
+            android:spinnerMode="dropdown"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/inputHintTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your input according to the selected module."
+            android:textSize="14sp"
+            android:textColor="@color/textPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Enter input"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/submitInputButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_background"
+            android:text="Submit"
+            android:textColor="@color/textPrimary"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal">
+
+                <TextView
+                    android:id="@+id/outputTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textIsSelectable="true"
+                    android:fontFamily="monospace"
+                    android:padding="8dp" />
+            </HorizontalScrollView>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Aquaa watermark in bottom-right corner -->
+    <TextView
+        android:id="@+id/aquaaWatermark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="αQuα²"
+        android:textColor="#03A9F4"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="14dp"
+        android:fontFamily="@font/notoserif_semicondensed_blackitalic"
+        android:shadowColor="#AA80D8FF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="8"
+        android:background="@drawable/aquaa_background"
+        android:padding="6dp"/>
+
+
+</FrameLayout>

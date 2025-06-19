@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.AlphaMath" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Light/Dark colors auto switch based on system -->
+        <item name="colorPrimary">#BB86FC</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+</resources>
